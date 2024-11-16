@@ -213,8 +213,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _settings:
-    _center: {x: 0, y: 0}
-    _size: {x: 50, y: 50}
+    _minPos: {x: 0, y: 0}
+    _size: {x: 10, y: 10}
     _tileSize: {x: 1, y: 1}
 --- !u!1 &1535280308
 GameObject:
