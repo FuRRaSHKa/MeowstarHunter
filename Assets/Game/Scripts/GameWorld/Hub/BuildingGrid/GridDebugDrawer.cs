@@ -6,11 +6,11 @@ namespace Game.Scripts.GameWorld.BuildingGrid
 {
     public class GridDebugDrawer : MonoBehaviour
     {
-        [SerializeField] private GridInstaller _gridInstaller;
+        [SerializeField] private GridSettings _settings;
 
         private void OnDrawGizmos()
         {
-            if (_gridInstaller == null)
+            if (_settings == null)
                 return;
 
             DrawGrid();
@@ -18,7 +18,7 @@ namespace Game.Scripts.GameWorld.BuildingGrid
 
         private void DrawGrid()
         {
-            var settings = _gridInstaller.Settings;
+            var settings = _settings;
             var maxPos = settings.MaxPos;
             var size = settings.Size;
             var tileSize = settings.TileSize;
@@ -26,7 +26,7 @@ namespace Game.Scripts.GameWorld.BuildingGrid
             {
                 for(int y = 0; y < size.y; y++)
                 {
-                    var pos = new Vector2(x * tileSize.x, y * tileSize.y) + maxPos;
+                    var pos = Vector2.Scale(new Vector2(x, y), tileSize) + maxPos;
                     DrawSquare(pos + tileSize / 2, tileSize);
                 }
             }

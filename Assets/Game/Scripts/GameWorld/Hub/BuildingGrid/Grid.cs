@@ -5,7 +5,7 @@ namespace Game.Scripts.GameWorld.BuildingGrid
 {
     public partial class Grid
     {
-        private readonly Settings _settings;
+        private readonly GridSettings _settings;
 
         private List<PlaceableObject> _placedObjets = new List<PlaceableObject>();
 

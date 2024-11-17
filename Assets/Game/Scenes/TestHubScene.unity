@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d4f7d6c8fc509243bd0676ea88bbcfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gridInstaller: {fileID: 838500716}
+  _settings: {fileID: 11400000, guid: 3ca8a35fbe32191479d6b4f7f735703a, type: 2}
 --- !u!114 &838500716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,10 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8549a4cf9fb4e24c958608af7b07d63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settings:
-    _minPos: {x: 0, y: 0}
-    _size: {x: 10, y: 10}
-    _tileSize: {x: 1, y: 1}
+  _settings: {fileID: 11400000, guid: 3ca8a35fbe32191479d6b4f7f735703a, type: 2}
 --- !u!1 &1535280308
 GameObject:
   m_ObjectHideFlags: 0

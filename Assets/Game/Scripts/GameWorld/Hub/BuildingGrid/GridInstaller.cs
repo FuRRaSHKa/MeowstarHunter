@@ -4,9 +4,9 @@ namespace Game.Scripts.GameWorld.BuildingGrid
 {
     public class GridInstaller : MonoBehaviour
     {
-        [SerializeField] private Grid.Settings _settings;
+        [SerializeField] private GridSettings _settings;
 
-        public Grid.Settings Settings => _settings; 
+        public GridSettings Settings => _settings; 
     }
 }
 
